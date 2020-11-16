@@ -19,7 +19,6 @@ def lava_ambiguous_corridor():
     for si in init_states:
         init_dist[si] = 1.0 / len(num_states) * np.ones(num_states)
     term_states = [200]
-    # init_dist = 1/(num_states) * np.ones(num_states)
     mdp_env = mdp.FeaturizedGridMDP(num_rows, num_cols, state_features, weights, gamma, init_dist, term_states)
     return mdp_env
 
@@ -64,10 +63,8 @@ def negative_sideeffects_goal(num_rows, num_cols, num_features, unseen_feature=F
     print("weights", weights)
     gamma = 0.99
     #let's look at all starting states for now
-    # init_dist = np.ones(num_states) / num_states
     init_states = [100]
     for si in init_states:
-        # init_dist[si] = 1.0 / len(init_states)
         init_dist[si] = 1.0 / np.ones(num_states) / len(num_states)
    
 
