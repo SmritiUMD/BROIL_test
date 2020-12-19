@@ -4,7 +4,7 @@ Note that this code repository has not been optimized for memory management or s
   
   ### Getting started
 *****
-  - `git clone https://github.com/dsbrown1331/brex_gridworld_cpp.git`
+  - `git clone https://github.com/SmritiUMD/BROIL_test.git`
 *****
   - `cd brex_gridworld_cpp`
   - `mkdir build`
